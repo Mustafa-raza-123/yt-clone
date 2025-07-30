@@ -1,0 +1,16 @@
+body{
+  font-family: "Roboto", Arial;
+  height: 3000px;
+  margin-top: 0px;
+}
+
+main{
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding-left: 95px;
+   padding-top: 30px;
+   background-color: rgb(246, 246, 246);
+   border-top: 1px rgb(204, 204, 204) solid;
+}
+
+

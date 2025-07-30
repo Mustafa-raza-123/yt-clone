@@ -1,0 +1,264 @@
+.header{
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-left: 70px;
+}
+
+.yt-logo{
+  width: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.search-bar{
+  width: 400px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px rgb(188, 188, 188) solid;
+  padding-left: 10px;
+  box-shadow: inset 0px 0px 2px rgb(212, 212, 212);
+}
+
+.search-bar::placeholder{
+  font-size: 16px;
+  color: grey;
+  font-weight: 500;
+  
+}
+
+
+.mid-section{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mid-section img{ 
+  width: 30px;
+  display: inline-block;
+}
+
+.search-button{
+  border: 1px rgb(205, 205, 205) solid;
+  padding: 0px 18px;
+  position: relative;
+  
+}
+
+.search-button:hover{
+ background-color: rgb(225, 225, 225);
+ cursor: pointer;
+ position: relative;
+}
+
+
+.voice-search-button{
+  background-color: rgb(244, 244, 244);
+  border-radius: 40px;
+  border: none;
+  height: 43px;
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-icon{
+  width: 22px;
+  height: 22px;
+}
+
+.voice-search-icon{
+   width: 24px;
+  height: 24px;
+}
+
+
+/* ye dono image ki class hai
+.search-icon{
+  background-color: rgb(247, 247, 247);
+  border: 1px rgb(183, 183, 183) solid;
+  padding: 0px 10px;
+}
+
+.voice-search-icon{
+  background-color: rgb(226, 226, 226);
+  border-radius: 15px;
+}*/
+
+
+
+.input::placeholder{
+  font-size: 10px;
+  color: red;
+}
+
+
+.search-tooltip{
+  background-color: grey;
+  color: white;
+  font-family: roboto;
+  padding: 8px 7px;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  z-index: 300;
+  opacity: 0;
+  transition: 0.15s;
+}
+
+.voice-search-tooltip{
+  width: 150px;
+  background-color: grey;
+  color: white;
+  font-family: roboto;
+  padding: 8px 7px;
+  position: absolute;
+  right: -70px;
+  top: 60px;
+  z-index: 300;
+  opacity: 0;
+  transition: 0.15s;
+}
+
+
+.search-button:hover .search-tooltip{
+  opacity: 1;
+}
+
+.voice-search-button:hover .voice-search-tooltip{
+  opacity: 1;
+}
+
+
+.right-section {
+ width: 205px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.right-section img{
+  background-color: none;
+  display: inline-block;
+  width: 22.5px;
+}
+
+.right-section img:hover{
+  cursor: pointer;
+}
+
+.notifications-class{
+  position: relative;
+}
+
+.notifications-count{
+  position: absolute;
+  background-color: rgb(203, 0, 0);
+  color: white;
+  width: 7px;
+  height: 12px;
+  border-radius: 12px;
+  top: -2px;
+  right: -5px;
+  padding: 2px 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* ye wala gemini wala hai. Agar upar wale ,ein kuch bhi galti ho jae to isko active karke dekh lena */
+/* is neeche walw ko active karne ke liye sirf ek s lagana hoga notification ke aage */
+.notification-count {
+    position: absolute;
+    top: -2px; /* Adjust these values to fine-tune the position */
+    right: -5px; /* Adjust these values to fine-tune the position */
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 5px; /* Adjust padding for size */
+    border-radius: 10px; /* Makes it pill-shaped */
+    z-index: 10; /* Ensures it stays on top of other elements */
+   white-space: nowrap; /* Prevents the number from wrapping */
+} 
+
+
+.create-tooltip{
+  background-color: grey;
+  color: white;
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 42px;
+  right: -15px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+}
+
+.youtube-apps-tooltip{
+  display: flex;
+  flex-direction: row;
+  background-color: grey;
+  color: white;
+  font-size: 12px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+}
+
+.youtube-apps-tooltip p{
+  color: white;
+  font-size: 12px;
+  padding-top: -4px;
+  padding-bottom: -4px;
+}
+
+
+.notifications-tooltip{
+  background-color: grey;
+  color: white;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 42px;
+  right: -34px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+}
+
+
+.upload:hover .create-tooltip{
+ opacity: 1;
+}
+
+.youtube-apps:hover .youtube-apps-tooltip{
+ opacity: 1;
+}
+
+.notifications-class:hover .notifications-tooltip{
+  opacity: 1;
+}
+
+.youtube-apps,
+.upload{
+  position: relative;
+}
