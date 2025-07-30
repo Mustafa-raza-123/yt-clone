@@ -1,0 +1,41 @@
+.left-sidebar{
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  opacity: 0.8;
+}
+.left-sidebar div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+
+.hamburger-menu{
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.left-sidebar div:hover{
+  cursor: pointer;
+  background-color: rgb(234, 234, 234);
+}
+
+.left-sidebar p{
+  color: black;
+}
+
+.sidebox{
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+
+img{
+  width: 25px;
+}
